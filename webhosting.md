@@ -32,8 +32,8 @@
     A4 --> B4
     B2 --> C2
     B4 --> C3
-    B1 -.-> A5
-    B3 -.-> A5
-    C3 --> D1[REX]
-    D1 -.-> A5
+    B1 -.->|Checks ABL for changes| A5
+    B3 -.->|Checks ABL for changes| A5
+    C3 -->|On most recent pipeline| D1[REX]
+    D1 -.->|Checks ABL for changes| A5
 ```
