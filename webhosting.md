@@ -13,10 +13,10 @@
     end
     subgraph Concourse
       subgraph Pipeline 1
-        B1[Feeder] -->|Informs of ABL change| B2[Bakery]
+        B1[Feeder] -->|Informs of ABL change| B2[Bakery\n codeversion 1]
       end
       subgraph Pipeline ..n
-        B3[Feeder] -->|Informs of ABL change| B4[Bakery]
+        B3[Feeder] -->|Informs of ABL change| B4[Bakery\n codeversion ..n]
       end
     end
     subgraph AWS
