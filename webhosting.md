@@ -20,9 +20,11 @@
       end
     end
     subgraph AWS
-      C1[Old S3 Bucket]
-      C2[S3 Bucket 1]
-      C3[S3 Bucket ..n]
+      subgraph S3 Bucket
+        C1[Old pipeline\n contents]
+        C2[Pipeline 1\n contents]
+        C3[Pipeline ..n\n contents]
+      end
     end
     A2 --> A5
     A4 --> A5
