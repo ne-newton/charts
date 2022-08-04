@@ -38,4 +38,5 @@
     B3 -.->|Checks ABL\n for changes| A5
     C3 -->|On most recent pipeline| D1[REX]
     D1 -.->|Checks ABL for\n books to display| A5
+    linkStyle default stroke:#ff00ff,stroke-width:4px;
 ```
